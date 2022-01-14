@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# (c) Shrimadhav U K & @No_OnE_Kn0wS_Me
+# (c) Shrimadhav U K & @harshahero
 import logging
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -102,12 +102,12 @@ async def start_me(bot, update):
                         InlineKeyboardButton("Help", callback_data = "ghelp")
                 ],
                 [
-                    InlineKeyboardButton('Support Channel', url='https://t.me/NovusUpdates'),
+                    InlineKeyboardButton('Support Channel', url='https://t.me/Rex_Botz'),
                     InlineKeyboardButton('Feedback', url='https://t.me/harshahero')
                 ],
                 [
                     InlineKeyboardButton('Other Bots', url='https://t.me/setokaibabot'),
-                    InlineKeyboardButton('support group', url='https://t.me/NovusSupport')
+                    InlineKeyboardButton('support group', url='https://t.me/REX_Bots_Support')
                 ]
             ]
         ),
@@ -182,7 +182,7 @@ async def cb_handler(client: Mai_bOTs , query: CallbackQuery):
      )
         except:
             pass 
-    elif data == "ghelp":
+    elif data == "help":
         await query.message.edit_text(
             text=Translation.HELP_USER,
             disable_web_page_preview = True,
